@@ -8,13 +8,12 @@
     height: 100%;
     width: 100%;
     position: absolute;
-
 }
 
 #ttle{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 90px;
     font-weight: 100;
+    font-size: 90px;
     text-align: left;
     top: 5%;
     z-index: 2;
@@ -38,4 +37,55 @@
 
 }
 
+#slide{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+    border: solid #000 2px;
+    border-radius: 5px;
+    top: 35%;
+    right: 5%;
 
+}
+
+.myCaps{
+    position: absolute;
+    z-index: 5;
+    top: 40%;
+    left: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: whitesmoke;
+    text-shadow: 1px 1px dodgerblue;
+    width: 300px;
+    border: 2px solid black; 
+    border-radius: 7px;
+
+
+}
+
+.left{
+    z-index: 3;
+    position: absolute;
+    top: 60%;
+    right: 53%;
+    cursor: pointer;
+    border-radius: 5px;
+    border-width: 8px;
+    opacity: 0.6;
+
+}
+
+.right{
+    z-index: 3;
+    position: absolute;
+    top: 60%;
+    right: 6%;
+    cursor: pointer;
+    border-radius: 5px;
+    border-width: 8px;
+    opacity: 0.6;
+
+}
