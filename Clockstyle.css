@@ -1,0 +1,41 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.clock{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+}
+
+#ttle{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 90px;
+    font-weight: 100;
+    text-align: left;
+    top: 5%;
+    z-index: 2;
+    position: absolute;
+    color: dodgerblue;
+    border: solid #2E2E2E 4px;
+    border-right-width: 1220px;
+    text-shadow: 1px 1px #000, -1px 1px #000;
+}
+
+#txt {
+    font-family: Arial;
+    font-size: 90px;
+    font-weight: 600;
+    right: 2%;
+    top: 6%;
+    color: whitesmoke;
+    z-index: 2;
+    position: absolute;
+    text-shadow: 2px 2px #000;
+
+}
+
+
