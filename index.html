@@ -6,10 +6,10 @@
     
     <p id="ttle">Louie's Clocks</p>
 
-    <link rel="stylesheet" type="text/css" href="C:\Users\figar\Desktop\Clock\THEORDERISGIVEN\Clockstyle.css" />
+    <link rel="stylesheet" type="text/css" href="C:\Users\figar\Desktop\Antonio\iloveanthony\Clockstyle.css" />
 
     <script>
-        
+
 function startTime() {
     var today = new Date();
     var h = today.getHours();
@@ -27,6 +27,27 @@ function checkTime(i) {
 }
     </script>
 
+    <script>
+    
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+
+    </script>
 
 
 </head>
@@ -36,6 +57,23 @@ function checkTime(i) {
     <div id="txt"></div>
 
     <img class="clock" src="clock.jpg">
+    
+    <div class="mySlides">
+        <img id="slide" src="digital.jpg">
+        <p class="myCaps">Now, on your right, you will see the type of clock you may be more familiar with, the digital clock. These are clocks that no longer use the same "hands" as with the traditional analog clocks, but instead typically will have some sort of display that simply tells time using numbers or even letters on some models. More lightweight versions of these digital clocks are what you have coded into your electronic devices. Thank you for your time and I hope that this slideshow has helped you to become more aware and familiar with the clock. -Louie</p> 
+    
+    </div>
+
+    <div class="mySlides">
+        <img id="slide" src="analog.jpg">
+        <p class="myCaps">To the right, you will see what has become synonymous with the very word, "clock". This is an analog clock. This type of clock uses a set of apendages called "hands" that dictate different units of time. The smaller one -the "hour hand"- as titled, dictates the hour of day, while the longer hand dictates the minute of the hour. These modern faced clocks such as the one displayed to the right, were introduced sometime during the Industrial Revolution and since, have become more and more modernized into the style of clock in our next slide.</p>
+    
+    </div>
+    
+    
+
+    <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="right" onclick="plusDivs(+1)">&#10095;</button>
 
 
 </body>
